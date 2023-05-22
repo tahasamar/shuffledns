@@ -90,7 +90,7 @@ func (c *Client) runMassDNS(output string, store *store.Store) error {
 	}
 	now := time.Now()
 	// Run the command on a temp file and wait for the output
-	args := []string{"-r", c.config.ResolversFile, "-o", "Snl", "-t", "A", c.config.InputFile, "-w", output, "-s", strconv.Itoa(c.config.Threads)}
+	args := []string{"-r", c.config.ResolversFile, "-o", "Snl", "-t", "A", c.config.InputFile, "-w", output, "-s", strconv.Itoa(c.config.Threads),"--root}
 	if c.config.MassDnsCmd != "" {
 		args = append(args, strings.Split(c.config.MassDnsCmd, " ")...)
 	}
