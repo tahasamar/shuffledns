@@ -1,4 +1,4 @@
-module github.com/projectdiscovery/shuffledns
+module github.com/tahasamar/shuffledns
 
 go 1.19
 
